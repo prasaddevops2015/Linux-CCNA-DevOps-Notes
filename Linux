@@ -1,1 +1,959 @@
-# Devops
+Linux Os: 13/12//23
+
+* It is an Open Source OS.
+* This is invented by Linus Torvalds in the year 1991.
+* It is a lightweight OS
+* Lovable Intellect not using XP; Full form of LINUX.
+* Linux is a Unix OS like,
+* It is a Secure OS
+linux is a process oriented operating system
+
+It is an Commercial os. It consists of 3 parts:
+Kernel
+Shell
+Programs
+
+OS: Operating system is a system software, that manages the computer hardware and software resources, and provides common services for computer programs. The OS is an interface between the user and computer hardware.
+types:
+1. desktop os
+2. server os
+3. mobile os
+4. embedded os
+5. rtos (real time os)
+
+Types of OS:
+===============
+Ubuntu, Centos, Fedora
+Kernel+GNU is also called as OS.
+
+File System:
+=============
+
+A File System is a collection of f/D stored in a define format on the disk is also called as "File/S". Every OS have their own file system.
+
+The File System can be classified into 3 Types:
+
+1.Disk based system: These file systems are used by disks(CD'S,HD,DVD'S,PENDRIVES)
+====================
+EX:FAT: File Allocation Table 16-bit and 32-bit it is used by windows client and old versions.
+
+NTFS: New Technology File System/ It is used by windows server oS/ Latest Clients
+
+ext2/ext3/ext4/XFS: External File System, These File Systems are used by Linux OS
+
+JFS: Journal File System: It is used by IBM-AIX UNIX
+
+UFS: Unix File System: It is used by Solaris OS
+
+HFS: High Performance File System: It is used by HP-UX
+
+2. Network Based File System: These File Systems are used by Networks.
+=============================
+DFS: Distributed fs: It is used window servers for sharing the files across the network.
+
+NFS: Network fs: It is used LINUX/UNIX for sharing the date across the network
+
+CIFS: Common Internet fs: It is used by samba server for sharing the resources from Linux to windows environment.
+
+3. Virtual fs: used by memory
+=============================
+SWAPFS: Swap fs: It is used by Linux as a temporary memory
+
+TMPFS: used by windows/Linux
+
+CACHEFS: used by windows and Linux to improve the performance of servers
+
+
+Structure of  Linux (/ can be denoted as root)
+============================================
+
+/etc- Configuration files location
+/bin- the binary executable files or normal user command location
+/sbin- The system admin commands location
+/lib- The lib files location
+/usr- The systems file location
+/opt- The third party packages location
+/tmp- The temporary files location
+/root- Default home directory of root user
+/home- Default home " of Linux users
+/boot- The bootable files location
+/var- The system log files
+/media- The removable media location
+/mnt- The optional directory to mount other media
+/dev- The logical devices names location
+/sys- The physical devices names loctaion
+/proc-
+
+man hier===> man page
+
+File system Directories: /boot /usr /opt /var /home /tmp
+Windows (GUI)
+WT is Client os: win10/8/7/xp
+Server os:2019/16/12/08
+
+Server provide resources to the client, The client can be accessing the resources
+from servers.
+
+Disk Management or File System Management
+=========================================
+
+fdisk -l - To see the available disks in the Linux.
+
+df -h- to see the diskspace usage in a human readable format.
+
+ifconfig:  stands for interface configurator. This command enables us to initialize an interface, assign IP address, enable or disable an interface. It display route and network interface.
+
+Linux Dir Commands:
+```````````````````````
+PWD(Present Working Directory)
+
+MKDIR (Create a new dir under any dir)
+
+RMDIR(Is used to delete the dir) it delete the only empty directory.
+
+cp -r dir
+
+rm -r == it can delete any kind of directory.
+
+ls(is used to display the lists of content of a dir)
+
+cd- is used to change the current dir
+
+ll -a== we can able to see hidden dir or files.
+
+ll -lh== we can see the size in bytes type.
+
+ls -l:
+===========
+Results in a long listing, providing additional information about the files that are listed, such as the permissions, the size of the file and other information
+
+ls -r:
+=============
+it prints the results in reverse alphabetical order.
+
+
+
+File Commands:
+``````````````
+Touch- is used to create empty files. We can create multiple empty files by executing  it's once.
+
+Cat- Is a multipurpose utility in the Linux System. It is used to create the file, display the content of a file, copy the content of one file to another file.
+
+RM- Is used to remove a file.
+
+CP stands for (copy)- Is used to the copy a file or directory.
+(source-----------destination)
+
+MV- is used to move a file or dir from one to another location
+(source-----------destination)
+
+how to rename the file:
+(mv oldname newfilename)
+
+rm -rf filename or rm filename
+
+if you want to clear the terminal by using these: 
+(ctrl+l or clear)
+
+cat is stands for 'concatenate"
+
+if you want to adding the data by using=== 
+=cat > fn
+=cat >> filename
+=cat -n (stands for numbers) filename
+
+tac=== is used to reverse order in our data.
+
+rm -r(-r is also called as recursive)
+  
+uname or uname-s  (It shows the user name)
+
+uname -a (it gives complete system architecture info)
+
+uname -r (it will display kernel version)
+
+uname -m, uname -p, uname -i, arch (it display the bit size)
+
+tar -cvzf- create, verbo, zip, file
+
+cvjf-create, verbo, bunzip, file
+
+xvjf- extracted
+
+ps- is used to check the active process in the terminal.
+
+VI/ VIM Editor: is a text editor.
+===============
+
+modes:
+=========
+normal mode/comman / default mode==== shortcuts
+insert
+execution mode
+
+vi filename ==== go to the edit mode
+press "i"
+esc+:+wq!======= file saved
+esc+:+q!==== unsave the file
+
+dd - delete
+cc - cut
+
+set nu===set the number
+set nonu=== unset the number
+
+vi -o /etc/passwd /etc/shadow /etc/group=== it will show the all conf files in a vertical order.
+
+vi -O /etc/passwd /etc/shadow /etc/group== it will show the conf files in a horizantel order.
+
+link:
+======= is a special type of file, that points to another file.
+
+hard link ln- link ex: ln file1 file2== u'll be able to link from one to another file.
+
+soft link == ln -s f1 f2== u'll be able to link from file to file, dir to dir, partion to partion.
+
+ls -li(i-means="inode number)
+
+NTP- Network time protocol
+============================(The Network Time Protocol (NTP) uses port 123 for requests and responses over the User Datagram Protocol (UDP).
+
+date mmddhhmmyyyy.ss ==local system
+
+yum install ntp* -y== install the package
+service ntpd status
+service ntpd start
+man ntpd
+vi /etc/ntp.conf=== configuration file
+
+service ntpd restart
+date
+ntpdate -u(update) ip == 
+
+Logs: (record) on the server
+===================================
+yum install rsyslog* -y
+
+service rsyslog status
+
+port number=514 use for this
+
+man rsyslog.conf==man page
+
+vi /etc/rsyslog.conf=== configuration file
+
+cd /var/log===multiple log files
+
+tail -f(flow) messages
+
+yum install zsh* -y 
+
+yum remove zsh
+
+File Permissions:
+==================
+in a file we have 2 types of permissions
+
+* read * write
+
+in a directory we ve 3 types of permissions
+
+* read- value (4)* write- (2) * execute-(1)
+
+owner and user (u) level -rwx
+
+group(g) level -rx
+
+others(o) level -rx
+
+all(a) level -rwx
+
+ls -ld- display the dir
+
+what is the default permission for a directory (755)
+
+what is the default permission for a file (644)
+
+default umask value is 022 ( the umask under the /etc configuration files)
+
+chmod==== (change modification of files) 
+
+* symbolic method
+
+* absolute method 
+
+how to remove the write permissions
+====================================
+chmod g-w,o-w fn == this is also called as the symbolic method 
+
+chmod 600 filename== this is also called as the "absolute method"
+
+
+chown: change owner \:
+
+chown username filename
+
+chgrp: change group:
+
+chgrp username filename
+
+ACL:
+Access control list:via acl ur giving permission to the user and group.
+
+getfacl(getting the acl details) filename
+
+setfacl -m(modify) u(username):jaggu:rwx file==for user
+
+setfacl -m g(group):india:rwx file
+
+setfacl -Rm(modify) u(username):jaggu:rwx dir
+
+setfacl -x(removing) u:jaggu:    file
+
+setfacl -b(oneshot all removed) file
+
+setfacl -Rb dir
+ 
+networking:
+==================
+
+ifconfig==
+
+ifconfig eth0 ip=== set the ipaddr
+
+dhcp==dynamic host control protocol
+
+static protocol
+
+cd /etc/sysconfig/network-scripts/
+vi icfg-eho==
+service NetworkManager restart
+
+setup
+nmcli(command line interface) or nmtui(text user interface)
+
+ifdown etho=remove or disconnected the ipaddress.
+ifup etho== bring it  up
+ping 
+ping -c(count) ip
+
+vi /etc/sysconfig/network== change the hostname
+
+netstat -tulnp== what are the ports are open in local system.
+
+*package management:
+=====================
+
+rpm- redhat packet manager
+
+yum- yellowdog update modifier
+
+rpm -ivh(install verbo hash ) pack== where we have install the dependency packages, it is not going resolve the dependency.
+
+rpm -ivh -nodeps(no dependency) pack==
+
+rpm -e(erase) pack
+
+rpm -qa(query all) pack== with help of  this command the package is installed or not
+
+rpm -qac(configuration file) pack
+
+rpm -qi(query information) pack===it's showing info
+
+yum install pack* -y== installing command
+
+yum remove pack* -y==removing
+
+yum update pack* -y== update
+
+yum info pack=== information
+
+yum deplist pack==== resolve the dependency
+
+yum clean all==== cleaning the crash
+
+yum repolist===we'll get all details repo id, name.
+
+repository: is a file or dir it contains the packages.
+
+2 types: local(where you are going to create the one system) and network
+rpm -ivh createrepo
+
+cd /etc/yum.repos.d/== if you want to going to create the repository
+vi anyname.repo
+[redhat]=repo id
+name=linux==repo name
+baseurl=file:///root/desktop/packages
+gpcheck=0
+yum clean all
+yum list all
+
+createrepo -v /root/desktop/packages=== all the packages going to be updated
+
+how to create the network rep:
+baseurl=ftp://192.168.0.200(ip)/root/desktop/packages
+
+NFS:
+===========
+network file sharing
+
+yum install nfs* -y==install
+service nfs status
+2049==port number
+vi /etc/exports
+vi /etc/nfsmount.conf===file
+
+mkdir redhat
+cd /redhat
+cat 11 22 
+vi /etc/exports
+/redhat 192.168.0.250(rw,sync)
+/redhat *(rw,sync)
+/redhat 192.168.0.0(rw,sync)
+/redhat *.example.com(rw,sync)
+/redhat 192.168.0.100/192.168.0.200(rw,sync)
+/redhat 192.168.0.10-20(rw,sync)
+
+showmount -e 192.168.0.250
+
+mount 192.168.0.250:/redhat /media
+cd /media
+ls
+
+vi /etc/fstab
+192.168.0.250:/redhat /media nfs defaults 0 0
+
+umount /media==unmount
+cd /net
+ls
+cd 192.168.0.250
+================================
+*boot process:
+=================
+vi /etc/inittab===we will see the runlevels
+
+service httpd start
+service httpd status
+service httpd stop
+service httpd restart
+service httpd reload
+/etc/inti.d/httpd/status
+
+text browser
+graphical browser=== firefox is a graphical browser
+
+
+systemctl status httpd
+cat /etc/services==we have so many services
+service --status-all==see the all the services status
+chkconfig -all==where we can see that all the services what is the status
+chkconfig --list | grep httpd
+chkconfig httpd on==if you want on the httpd
+chkconfig httpd off==if you want off
+
+who -r=runlevel
+chkconfig --level 5 httpd on
+chkconfig -del httpd==delete 
+chkconfig -add httpd==add
+
+how to break the rootuser password:
+su user
+passwd root
+reboot
+
+grub=grand unified boot loader
+grub-md5-crypt==generate the passwd
+vi /etc/grub.conf==conf file
+
+se Linux:
+=========
+secure enhance Linux
+man selinux==more info
+vi /etc/sysconfig/selinux==conf file
+getenforce===enforcing mode
+setenforce==
+sestatus==it shows what is the mode
+
+context: is a roles and policies, which we can implement the files and directories
+3types
+*u-user define *r-role type *t-type
+cd /var/www/html
+ls -lZ filename
+chcon -t xdm_tmp_t file=
+
+Boolean:
+========
+getsebool -a ==list of Boolean
+getsebool -a | grep ftp
+setsebool -p 
+
+samba:
+===========
+yum install samba -y
+
+service smb  restart
+service nmb restart
+137 138 139=port number
+man smb.conf==man page 
+vi /etc/samba/smb.conf====config file
+mkdir samba
+chcon -t samba_share_t /samba==change context
+chmod o+rwx /samba
+cd /samba
+touch 11 22
+cat > 11
+add the data
+cd
+service smb restart
+service nmb restart
+
+smbclient -L //ip
+smbclient -L //ip/redhat
+ls
+get 11==single file download
+mget 11  22===multiple file download
+put==upload the 
+mput==multiple files uploaded
+?==list of files it's showing in samba
+del fn===delete the files
+
+*process-1&2:
+==============
+ps(process status)==it's showing active process
+ps a==all process
+ps u(user)
+ps aux(all user background and foreground)
+
+kill -l==signal manage
+9 15 18 19
+ps aux| grep ping
+pidof ping==display the particular pid
+ps -P pidno
+top==live process we can see
+renice -n -20 pid
+
+*crontab: to schedule the jobs
+=======================
+yum install crontab* -y-install
+service crond status
+crontab -e-edit as well schedule the jobs'
+crontab -r
+crontab -eu username
+crontab -lu username
+crontab -ru username (remove)
+
+*ssh:
+=======
+yum install openssh* -y
+service sshd status
+22-prt number
+vi /etc/ssh/sshd_config==config file
+ssh root@ip
+ssh -X root@ip==where you can access the data graphically.
+gedit file==graphical edit
+nautilus dirname==where you can access the dir
+w- display the current loged users and their activities
+
+wall- how are you(message)
+ssh-keygen==where we can generate the keys
+scp id_rsa.pub ip:.ssh/authorized_keys
+cat authorized keys
+vi authorized_keys
+
+ssh redhat@ip date-display the date
+ssh fedhat@ip touch 11 22 
+
+scp& rsync:
+===============
+
+partion:
+========
+fdisk -l
+mbr-master boot record, size=512 bytes
+446 64 2==sectors
+ |    |
+boot info   partion
+fdisk -cu /dev/sda
+h,m,p,n
+primary====min 1 max4
+logical===always start from 5 to 15==11
+partprobe /dev/sda5==setup 
+
+mkfs.ext4 /dev/sda5
+mount /dev/sda5 /media
+cd /media
+touch file1 file2
+vi /etc/fstab
+umount /media
+
+ram: random access memory
+free -m
+L-list
+mkswap /dev/sda6
+swapon /dev/sda6
+swapoff /dev/sda6
+
+lvm:
+logical volume management:
+yum install system-config-lvm* -y
+man lvm
+vi /etc/lvm/lvm.conf==config file
+pvcreate dev/sda7==create the 
+pvs
+vgcreate vgname /dev/sda7
+
+
+
+
+
+
+
+
+File Content Commands:
+==========================
+
+Head- Is used to diplay the first 10 lines content of a file.
+
+Tail- Is used to similar to the head command, it is display the last 10 lines content of a file. It is useful for reading the error messages.
+
+User Commands:
+```````````````
+SU- Swtch User- 
+======================
+Is used to provide administrative access to the another user.
+It allow access of the Linux shell to another user.
+
+ID- 
+================
+is used to display the GID (Group ID), UID (User ID)
+
+Useradd-
+============
+ is used to the add the user
+userdel- 
+===========
+ remove the user.
+
+Groupadd- 
+===============
+is used to create a user group.
+
+Passwd-
+=========
+ is used to change the user password.
+
+sudo passwd username:
+
+echo- is used to print something in the terminal.
+
+wget - is used to 
+
+rename Command:
+================
+The rename command is used to rename files. It is useful for renaming a large group of files.
+
+how to check the shell by using command;
+====================================
+echo $SHELL
+
+CURRENT SHELL IN OUR LINUX SERVER:
+===============================
+ECHO $0
+
+logname (who is the first log into the server.)
+
+whoami 
+
+sudo (super user do)
+
+who -b (check the system boot)
+
+more command
+=================
+The more command is quite similar to the cat command, as it is used to display the file content in the same way that the cat command does. The only difference between both commands is that, in case of larger files, the more command displays screenful output at a time.
+
+less Command
+===============
+The less command is similar to the more command. It also includes some extra features such as 'adjustment in width and height of the terminal.
+
+comm Command
+============
+The 'comm' command is used to compare two files or streams.
+
+sort Command
+============
+The sort command is used to sort files in alphabetical order.
+
+Grep- it stands for Global regular expression print
+=========================================
+is used to Most Powerfull and filter in linux, It is useful for searching the content from a file. Generally, it is used with the pipe.
+
+Gzip-
+==============
+The gzip command is used to truncate the file size. It is a compressing tool. It replaces the original file by the compressed file having '.gz' extension.
+
+Gunzip-
+=============
+The gunzip command is used to decompress a file. It is a reverse operation of gzip command.
+
+WIN Networking Commands:
+===========================
+
+1. IPCONFIG-
+The IPCONFIG network command provides a comprehensive view of information regarding the IP address configuration of the device we are currently working on.
+
+The IPConfig command also provides us with some variation in the primary command that targets specific system settings or data, which are:
+
+IPConfig/all - Provides primary output with additional information  about network adapters.
+IPConfig/renew - Used to renew the system’s IP address.
+IPConfig/release - Removes the system’s current IP address.
+
+2. NSLOOKUP- 
+The NSLOOKUP command is used to troubleshoot network connectivity issues in the system. Using the nslookup command, we can access the information related to our system’s DNS server, i.e., domain name and IP address.
+
+3. HOSTNAME
+The HOSTNAME command displays the hostname of the system. The hostname command is much easier to use than going into the system settings to search for it.
+
+4. PING: The ping command is used to check the connectivity between two nodes, that is whether the server is connected. It is a short form of "Packet Internet Groper."
+
+5. TRACERT
+The TRACERT command is used to trace the route during the transmission of the data packet over to the destination host and also provides us with the “hop” count during transmission.
+
+Using the number of hops and the hop IP address, we can troubleshoot network issues and identify the point of the problem during the transmission of the data packet.
+
+6. NETSTAT
+ displays an overview of all the network connections in the device. 
+
+7. ARP(Address Resolution Protocol)
+The ARP command is used to access the mapping structure of IP addresses to the MAC address. This provides us with a better understanding of the transmission of packets in the network channel.
+
+8. SYSTEMINFO
+we can access the system’s hardware and software details, such as processor data, booting data, Windows version, etc.
+
+
+
+Bash shell:
+==============
+The most commonly-used shell for Linux distributions is called the Bash shell. Bash provides many advanced features, such as command history and inline editing, which allows a user to easily re-execute previously executed commands or a variation of them via simple editing.
+Bash has an extensive feature list
+types of shells:
+
+ash 
+ksh
+csh
+tcsh
+
+
+Scripting: 
+=============
+The ability to place commands in a file and then interpret (effectively use Bash to execute the contents of) the file, resulting in all of the commands being executed. This feature also has some programming features, such as conditional statements and the ability to create functions (AKA subroutines).
+
+Aliases:
+=============
+ The ability to create short nicknames for longer commands.
+
+What is a command?
+====================
+
+a command is a software program that, when executed on the CLI, performs an action on the computer.
+
+Keep in mind that Linux is case-sensitive. Commands, options, arguments, variables, and file names must be entered exactly as shown.
+
+What is PPP in Linux?
+========================
+PPP, or Point-to-Point Protocol, is a recognized `official' internet protocol. It is a protocol used to exchange IP frames (and others) over a serial link.
+
+What is a SSH command?
+======================
+SSH, also known as Secure Shell or Secure Socket Shell, is a network protocol that gives users, particularly system administrators, a secure way to access a computer over an unsecured network. SSH also refers to the suite of utilities that implement the SSH protocol.
+
+Ec2 is stands for elastic cloud computing, it is type of virtual machine.
+AMI== amazon machine image
+== every ami has a their own identification number is called ami id.
+SECURITY GROUP:
+it is a virtual firewall at ec2 instance level.
+it contains set of rules
+every application has their own port number, all ports between 0 to 65535.
+
+ssh 22
+http 80 
+mysql 3306
+rdp -3389
+Public ip: ec2 instance login and application send to the enduser to access the app.
+
+Private ip: it is used to internal communication
+
+Pem file== it contains private key
+
+
+The env:
+===========
+is used to display all the available variables in the system.
+Kernel:
+===============
+is the core component of the linux os that manages the system software resources.
+it  is a heart of the linux os
+it acts as an intermediary between applications and the physical hardware of the computer. ensuring efficient and secure operation of the system.
+
+kernel is going to manage the system resources(cpu, memory) as per user request.
+
+software(os)
+|
+kernel
+|
+hardware
+
+types of kernels:
+=====================
+monolithic kernel== linux os level
+micro
+hybrid
+
+shell:
+==============
+is a command line interpreter that provides a user interface for interacting with the operating system.
+
+it allows users to execute commands and run scripts
+
+types of shells:
+====================
+graphical shell
+command line shell
+
+default shell is bash shell.(command line editing, job control, rich built in commands scripting)
+
+I Have a file, if i want to print a particular line then  which command will be used:
+
+cat filename | head -121 | tail -1
+
+cat filename | tail -20 | head -1
+
+cat filename | tail -19 | head -1
+
+
+WC(word count) Command:
+==========
+lines- wc -l filename
+
+words- wc -w filename
+
+characters- wc -c filename
+
+wc -m- to check the size
+
+grep
+========
+if you want to find a particular word in a file then u will be used:
+
+grep word filename
+
+cat filename | grep word
+
+grep -i(it means ignore case sensitive) word filename
+
+grep -i -r word filename
+
+grep -c (counting no.of matching lines) word filename
+
+grep -l word filename (print the filename with matching lines in a directory)
+
+grep -l -i word "*"(it means displaying all files in ur system)
+
+grep -n(line numbers) -i word fn
+
+grep -v(invert) -i word fn
+
+^- cap- beginning of the line
+
+$- dollar- end of the line
+
+i want to display only files:
+=================================
+ll | grep ^-
+
+ll | grep ^d (directories)
+
+ll | grep ^- |  wc -l
+
+ll | grep fn$
+
+ps aux | grep httpd (httpd it means apache)
+
+Find command:
+==============
+is used to search and locate the list of files and directories based on conditions.
+
+conditions like
+__perm
+__type
+__date
+__size
+
+find <path> -name filename -conditions
+type
+========
+find / -name filename -type f (files)
+
+find / -name filename -type d
+
+find . / -name filename 
+
+find / -type f -name "*.war"
+
+perm
+========
+find /opt -type d -perm 777
+
+crontab command:
+=================
+What is cron?
+- cron is a time-based job scheduler in Unix-like operating systems, including Linux. It allows users to schedule jobs (commands or scripts) to run automatically at specified times or intervals. These scheduled tasks are called "cron jobs."
+Understanding crontab.
+- crontab is a configuration file that specifies the schedule of cron jobs for individual users or the system. Each line in a crontab file represents a task and its corresponding schedule.
+
+service 
+                } both
+systemctl
+
+
+packagemanagement:
+=======================
+package/software/application/product these all names are same.
+
+vic- exe- execute
+
+vic- msi- microsoft
+
+vic- setup
+
+rhel family:
+
+amazon linux
+centos   }rpm stands for- redhat package management            
+fedora
+
+ubuntu== vic.deb (it is also called as debian)
+
+we have a 2 methods:
+====================
+yum (yellow dog update modifier) method=== when we will install the in built software
+
+sudo yum install git ====== installing command
+
+sudo yum install git -y 
+sudo yum remove git =======  delete the command
+
+update: sudo yum update git -y
+
+info: sudo yum info git 
+
+rpm method == whenever we will install the third party applications then will be used.
+
+wget-
+
+rpm -i (install)
+    -u (upadte)
+    -e (erase)
+
+
+
