@@ -1,1 +1,202 @@
+Network Devices:
 
+NIC Card- Network Interface card: is a device to help the computer communicate with another device. The NIC it contains the hardware address.
+It can support a transfer rate of 10,100 to 1000 Mb/s.
+There are 2 types of NIC: Wireless NIC, Wired NIC
+
+Repeater: It amplifies the signal. It remove the noises from signal such as electromagnetic interference or Radio frequency Interference. It had 2 ports one for in and one for out.
+is also known as the "Signal boosters".
+
+*Hub: It is a Central Device, It is known as a Multi port repeater. It works same as repeater.
+number of ports 4,8,16,24 and 48
+always broadcast
+works in half-duplex mode
+Max speed 10Mbps, Uses 5-4-3 rule            Types: Passive Hub, Active Hub, Intelligent Hub
+
+*Switch: Speed 10/100/1000 Mbps, no.of ports 4,5,8,10,16,24 and 48, Works in Full duplex and Half duplex, Single broadcast domain, Types- Manageable, Unmanageable Switch
+Switch is used to connect same network.
+
+*Router: is used to connect two or more different networks, Internetworking, Broadcast control, routing, packet filtering
+
+internet-Public network, Intranet- Private Network
+
+*Access Point: It is used to connect wireless or wired network. It works as a switch for wireless devices. 
+
+*Modem: is used to convert analog signal to digital and digital signal to analog.
+
+Gateway: It is any devices which connects your network to another network.
+
+* Firewall: is a hardware /software device, which filters incoming and outgoing data packets on the basis of rule defined by the network administrator.
+
+Network Topology: It is a network diagram which explains how devices are connected together in the network.
+2 types of topology: Physical topology: It defines how devices are physically connected together in the network.
+Logical topology: It defines how the data is transferred between in the networks.
+
+Physical topology
+*Node to Node or Single node Topology
+*Bus Topology: Devices are connected together with help of the single backbone cable. Components: Co-axial cable, bnc connector, T-connector, Terminator. Features: speed 10mbps, alwaya broadcast, max device can connect 20, uses CSMA/ CD
+*Ring Topology *Star Topology * Tree Topology *Mesh Topology *Hybrid Topology
+
+**OSI: It defines how data is transferred from one device to another device in the network. It was developed by ISO International Organization for Standardization. It was developed in 1984.
+It consists of 7 layers, each layer has a specific responsibilities.
+*Application- Closest to the user, It provides network services to the applications. Protocols: FTP, HTTP, HTTPS, DNS, DHCP, SMTP, TelNet, IAMP, POP3 
+
+*Presentation- It compress, decompress, encrypt, decrypt and translation data into common mode.
+
+*Session- It create, maintain and terminate sessions between applications.
+
+*Transport- Ensures end to end communication, Error recovery, Flow Control, it segments and reassembles data into a data stream. Protocols- TCP, UDP, Functions: Port Addressing, 3way Handshaking, 
+
+*Network- Handling routing of data packets between devices across the different networks, addressing, Path determination. Protocols- IP, ICMP, ARP
+
+*Data-link-Provides node to node data transfer, Error detection and Correction, Sub layers: LLC-Logical Link control, MAC- Media Access Control
+
+*Physical-Transmits raw bits over a physical medium
+
+**Protocols: It is a set of rules which defines how communication will be done in the network.
+
+Port Number: To identify every protocol IANA(Internet Assigned Number Authority). The port no is b/w 0 to 65535.
+
+HTTP: It is used to access website and webpages over the network. Port No: 80
+HTTPS: 
+*FTP: File Transfer Protocol- It is used to upload and download the files to the server and from the server. It port no 21 for authentication and 20 for data transfer.
+
+*DHCP: Dynamic Host configuration Protocol- It is used to provide IP Address and all TCP/IP settings automatically to the Host in network. Port no is 67 and 68.
+
+*DNS: Domain name System-It is used to resolve the host name to IP Address and IP Address to Host name. Port no is 53.
+
+DNS Zones:* Forward Lookup Zone *Reverse Lookup Zone
+
+Types: *Primary DNS Server *Secondary DNS Server
+
+DNS Records: Host Record(A), PTR(Pointer Record), NS(Name Server) Record, MX-Mail Exchange Record
+
+*Telnet: It is used to remotely login and access any device in the network. Port no is 23
+
+*SNMP: SNMP stands for Simple Network Management Protocol. It is a framework used for 
+managing the devices on the internet by using the TCP/IP protocol suite.
+
+*SSH: Secure Shell- It is used to remotely login and access any device in the network. It create secure connection. Port no is 22.
+
+*SMTP: Simple Mail Transfer Protocol: It is used to send the E-mail from the sender machine to receiver   e-mail. Port no is 25.
+
+POP3- Post Office Protocol Version3- It is used to download e-mail from the mail server to the local computer. Port no is 110
+
+IMAP-Internet Message Access Protocol-Port no is 143.
+
+*Outlook-
+ICMP-Internet Control Message Protocol-is used to get error messages, is used to test the connectivity.
+
+ARP-Address Resolution Protocol-It is used to resolve the Ip address to mac address.
+
+RARP-Reverse Address Resolution Protocol-It is used to resolve the mac address to ip address
+
+*Network Types: LAN, MAN, WAN, PAN, SAN, CAN
+
+SCP: It is used for securely copying files and folder in the network.
+
+DORA/ IP Leasing  Process: Discover offer request acknowledgement
+
+Client                               Server
+                   DHCP Discover(It is sent by DHCP Client to server)
+             DHCP Offer(Sent by Server to Client)
+                          DHCP Request(Sent by client to Server)
+            DHCP Acknowledgement(Sent by Server to Client)
+
+
+
+*TCP-Transmission Control Protocol- is a connection oriented protocol, reliable, error checking, it provide feedback for the end users and it is very slower to perform.
+
+*UDP-User datagram protocol-Connection less, Unreliable, it's perform faster than TCP, No error Checking, It does not provide any feedback, 
+
+
+IP: Internet Protocol- IPV4, IPV6
+
+Routing Protocols:
+* Static Routing Protocol: is a method in which the administrator manually needs to update or add a network in all the routers.
+*It is only suitable for a small networks
+
+*Default Routing Protocol
+*Dynamic Routing Protocol: a method in which router learn the network info automatically from the neighbour routers using routing protocols.
+
+  *IGP: It is used to share the routing information within a same autonomous system. *OSPF *ISIS *EIGRP *RIP *IGRP                             
+*EGP: which is used to share the route information between different as. *BGP
+
+BGP: It is a open standard protocol, it is designed for huge inter network like internet
+slowest routing protocol, Path domain routing protocol.
+
+Tables: Neighbour Table, Database Table, Routing
+
+Config Syntax: router bgp <As>
+               network<network id> [mask<subnet mask>]
+               neighbour <ip-address> remote-as <as number>
+
+Messages: Open, Keepalive messages, Update, Notification
+
+AS: It is a group of devices in the network that are managed by the a single organization.
+
+
+OSPF: is a Open Shortest Path First, It is an Interior Gateway Protocol. It is a Link state protocol.
+*Uses Multicast Address
+*Cost is the Metric used
+*Cost Formula cost=10^8/Bandwidth
+*Classless Routing protocol that supports VLSM and CIDR
+*Supports Equal Cost load Balancing
+* Router ID plays an Important role in OSPF.
+
+7 States: Down state, Init, Two way state, Exstart, Exchange, Loading, Full state.
+
+OSPF Area: Backbone area, Transit area
+
+OSPF Router Types: Internal, Backbone, Area Border Router(ABR)
+
+LSA: Link State Advertisement:
+Types: Router LSA, Network, Summary, Summary ASBR, AS External, Multicast, Not so stubby area.
+
+VLAN: is Virtual Local area Network
+*VLAN is a group of devices , that appear to be working on the same LAN, despite their geographical distribution.
+*It can be spread across multiple switches in an network
+2 Ranges of VLAN: Normal Range(1 to 1005) Extended range VLAN (1006 to 4096)
+
+Advantages: Flexible and Easy to manage, Easy Administration, Security, Reduced cost
+
+*Trunk Port: An Interface Trunk port allow to carry or pass multiple VLAN traffic to pass through it.
+*Generally Trunk ports are used between Switch to switch or switch to Router.
+
+
+
+RIP: Routing Information Protocol-Distance vector Routing Protocol
+
+EIGRP-Enhanced interior gateway Routing Protocol: 
+
+
+Hubs are the Layer 1 ( Physical Layer ) device which will not understand the IP address or the MAC address. It will forward the packet to all other ports expect to the port from where it is received. And this is the major disadvantage is, because HUB doesnot know where the destination is loacated.Due to this there will be collision and queues that leads to delays and packet loss in the network.To overcome this headache, Switch was introduced.
+
+Bridge:
+
+Bridges are Layer 2 ( Data link Layer ) device used to connect to two different network device and provide communication between them. As similar to Hubs, Bridges also broadcast the packet to all other port expect from where it is received; however, Briges Mantains the MAC address table. As soon as new segment is discovered the subsequent traffic will be sent to the descrided recipients.
+ 
+
+Switches :
+
+Switches are the high speed devices which receives the packet and redirect to the correct destination based on the MAC address learnt from the port. 
+Switches are similar to Hubs; however, unlike Hub a switch will learn the MAC address of each port, maintain in its MAC address table. It can sent and receive the packet at the same time with out collision or delays.
+
+Routers:
+Routers  are Layer 3 ( Network Layer ) devices that forward the packet from one network to another network. 
+For example as like your home router connects your LAN to the internet.
+
+
+
+ What is a MAC address? MAC stands for Media Access Control. It’s a unique identifier that is assigned to a network interface card, aka a NIC.
+
+This is what a MAC address looks like 08-00-27-EC-10-61. Its a 48-bit (6-byte) address that is used for layer 2 communication. 
+
+The first thing to note is that unlike IP addresses, which and can be changed, MAC addresses are burnt into NIC buy the manufacture.
+
+A MAC address has 2 sections. The first 24-bits is called the Organizationally Unique Identifier (OUI) and it identifies the vendor. The last 24-bits is a unique value assigned by the vendor. The result is an address that should be unique in the world.
+
+There are three types of Mac address
+Unicast - A unique mac address assigned to an interface
+Multicast - An address used to send traffic to a device using a particular application/protocol.
+Broadcast - An address that is sent to all devices within a local network.
