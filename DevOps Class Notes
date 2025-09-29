@@ -10,3 +10,11 @@ AWS: It is an a Cloud Provider, Provide service to the customers in across the w
 Launched on 2006 on Northern Virgina
 Firstly, They are Launched on 1996===> 1997===> 1999===> There is a one Revoultion Happend Becasue of that they are  successfully Launched on 2006. What is that Revoultion (Network Revolution)
 It Is followed By the Pay as you ago Pricing System
+
+Docker: It's One of the Deployment Tool.
+It's a Containerzation Tool.
+Yum Install Docker== To install the Docker
+Docker -v or docker --version ===To see the Docker version
+Docker ps or docker ps -a == To check the all containers 
+docker pull <image_name> == To Get the Image from Hub
+docker run <image_name>== To Check the img from local then it will go to the hub
