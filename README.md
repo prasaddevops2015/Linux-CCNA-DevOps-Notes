@@ -1,1 +1,1 @@
-In This Repository, I've Written all the  Important Concepts with a Brief Explanation
+In This Repository, I've Written all the Concepts with a Brief Explanation
