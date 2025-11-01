@@ -134,10 +134,7 @@ Results in a long listing, providing additional information about the files that
 ls -r:
 =============
 it prints the results in reverse alphabetical order.
-
-
-
-File Commands:
+# File Commands:
 ``````````````
 Touch- is used to create empty files. We can create multiple empty files by executing  it's once.
 
@@ -147,6 +144,7 @@ RM- Is used to remove a file.
 
 CP stands for (copy)- Is used to the copy a file or directory.
 (source-----------destination)
+if you copy the the dir from source to dir destination use this command: cp -r <dirname> <dirname>
 
 MV- is used to move a file or dir from one to another location
 (source-----------destination)
@@ -186,7 +184,7 @@ xvjf- extracted
 
 ps- is used to check the active process in the terminal.
 
-VI/ VIM Editor: is a text editor.
+# VI/ VIM Editor: is a text editor.
 ===============
 
 modes:
@@ -210,7 +208,7 @@ vi -o /etc/passwd /etc/shadow /etc/group=== it will show the all conf files in a
 
 vi -O /etc/passwd /etc/shadow /etc/group== it will show the conf files in a horizantel order.
 
-link:
+# link:
 ======= is a special type of file, that points to another file.
 
 hard link ln- link ex: ln file1 file2== u'll be able to link from one to another file.
@@ -219,7 +217,7 @@ soft link == ln -s f1 f2== u'll be able to link from file to file, dir to dir, p
 
 ls -li(i-means="inode number)
 
-NTP- Network time protocol
+# NTP- Network time protocol
 ============================(The Network Time Protocol (NTP) uses port 123 for requests and responses over the User Datagram Protocol (UDP).
 
 date mmddhhmmyyyy.ss ==local system
@@ -234,7 +232,7 @@ service ntpd restart
 date
 ntpdate -u(update) ip == 
 
-Logs: (record) on the server
+# Logs: (record) on the server
 ===================================
 yum install rsyslog* -y
 
@@ -254,7 +252,7 @@ yum install zsh* -y
 
 yum remove zsh
 
-File Permissions:
+# File Permissions:
 ==================
 in a file we have 2 types of permissions
 
@@ -301,7 +299,7 @@ chgrp: change group:
 
 chgrp username filename
 
-ACL:
+# ACL:
 Access control list:via acl ur giving permission to the user and group.
 
 getfacl(getting the acl details) filename
@@ -318,7 +316,7 @@ setfacl -b(oneshot all removed) file
 
 setfacl -Rb dir
  
-networking:
+# networking:
 ==================
 
 ifconfig==
@@ -345,7 +343,7 @@ vi /etc/sysconfig/network== change the hostname
 
 netstat -tulnp== what are the ports are open in local system.
 
-*package management:
+# *package management:
 =====================
 
 rpm- redhat packet manager
